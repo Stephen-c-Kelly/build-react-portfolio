@@ -11,7 +11,7 @@ import { Link } from 'react-scroll';
 
 const Navigation = () => {
   const [nav, setNav] = useState(false)
-  const handleClick=()=>setNav(!nav)
+  const handleClick=()=> setNav(!nav)
 
   
 return (

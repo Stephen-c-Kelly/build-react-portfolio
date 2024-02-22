@@ -9,16 +9,16 @@ import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Navigation />
       <Home />
       <About />
       <Skills />
       <Works />
       <Contact />
-      
     </div>
   );
 }
 
 export default App;
+
