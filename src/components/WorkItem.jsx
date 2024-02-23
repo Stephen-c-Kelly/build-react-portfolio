@@ -5,11 +5,15 @@ const WorkItem = (props) => {
 const { backgroundImage, title, description, demoURL, codeURL } = props
 
   return (
-    <div 
+    <div
+    className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-blue-500'
     style={{ backgroundImage: `url(${backgroundImage})` }}
-    className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+    
+    // style={{ backgroundImage: `url(${backgroundImage})` }}
+    // className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
     >
-      {/* hover effect */}
+      {/* hidden content below */}
+
       <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
         <span className=' text-lg font-bold text-white tracking-wider'>
           {title}
