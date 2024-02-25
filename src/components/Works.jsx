@@ -6,7 +6,7 @@ const Works = () => {
 const projects = [
   {
     title: 'Whose in Charge?',
-    description: 'Whose in Charge? is an online quiz game built to help you memorize the names of world leaders and the countries they lead. ',
+    description: 'Whose in Charge? is an online quiz game built to help you memorize the names of world leaders. ',
     demoUrl: 'https://world-leader-quiz.netlify.app',
     codeUrl: 'https://github.com/Stephen-c-Kelly/WorldLeaderQuiz/blob/main/README.md',
     backgroundImage: 'https://imgur.com/WpVLPEd'
