@@ -2,7 +2,7 @@ import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Link } from 'react-scroll'
 
-const About = () => { 
+const About = ({content}) => { 
   return (
     <div
       name="about"
@@ -22,13 +22,13 @@ const About = () => {
           <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
             <div className="sm:text-right text-4xl font-bold">
               <p>
-              Hi, I'm Stephen Kelly. Please take a look around.
+              {content?.fields.about_caption}
             </p>
           </div>
           <div>
             <p>
             {" "}
-            Full-stack software engineer, customer success manager, and digital project director inspired by building products clients love. As a software developer, I'm passionately interested in developing software within a collaborative team that drives client success.
+            {content?.fields.about_main_details}
             </p>
             </div>
           </div>
