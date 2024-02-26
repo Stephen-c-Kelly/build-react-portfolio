@@ -1,7 +1,6 @@
 import React from 'react'
-import WorkItem from './WorkItem'
 
-const Works = () => {
+const Works = ({content}) => {
 
 const projects = [
   {

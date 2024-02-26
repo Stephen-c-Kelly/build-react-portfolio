@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Skills = ({content}) => {
+  console.log(content)
   return (
     <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
       {/* container for skills */}
@@ -13,7 +14,7 @@ const Skills = ({content}) => {
         </div>
 
       <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-        {content?.fields.skills.map((skill, index)=>{
+        {content?.fields.known_skills.map((skill, index)=>{
           return(
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
               <p className='mp-4'>{skill.known_skills}</p>

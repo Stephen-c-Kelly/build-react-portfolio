@@ -9,13 +9,16 @@ import {React, useEffect, useState} from 'react';
 import axios from 'axios';
 
 function App() {
-const readtoken = process.env.BUTTER_CMS_READ_TOKEN
+const readtoken = "a637dfde28fa4ecc0e140c03459762e0559e84f8"
+// const readtoken = process.env.BUTTER_CMS_READ_TOKEN
 const [data, setData] = useState([])
+
 
 useEffect(()=>{
   const getData = async () =>{
-    axios.get(`https.//api.buttercms.com/v2/pages/portfolio/a-portfolio-site?auth_token=${readtoken}`)
-    .then(res =>{setData(res.data.data.fields.my_personal_porfolio)
+    axios.get(`https://api.buttercms.com/v2/pages/portfolio/stephen-kelly-portfolio/?auth_token=${readtoken}`)
+    .then(res =>{setData(res.data.data.fields.stephenkellyportfolio)
+      console.log('Data fetched:', res.data.data.fields.stephenkellyportfolio);
     })
     .catch(err =>{
       console.log(err)
