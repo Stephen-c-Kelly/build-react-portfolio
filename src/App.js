@@ -7,25 +7,35 @@ import Works from './components/Works';
 import Navigation from './components/Navigation';
 import {React, useEffect, useState} from 'react';
 import axios from 'axios';
+import sampleData from './components/sampleData'
 
 function App() {
 const readtoken = "a637dfde28fa4ecc0e140c03459762e0559e84f8"
 // const readtoken = process.env.BUTTER_CMS_READ_TOKEN
 const [data, setData] = useState([])
 
+useEffect(()=>{
+  setData(sampleData)
+}, [])
 
 useEffect(()=>{
-  const getData = async () =>{
-    axios.get(`https://api.buttercms.com/v2/pages/portfolio/stephen-kelly-portfolio/?auth_token=${readtoken}`)
-    .then(res =>{setData(res.data.data.fields.stephenkellyportfolio)
-      console.log('Data fetched:', res.data.data.fields.stephenkellyportfolio);
-    })
-    .catch(err =>{
-      console.log(err)
-    })
-  }
-  getData()
-}, [])
+  console.log(`data is `, data)
+}, [data])
+
+// useEffect(()=>{
+//   const getData = async () =>{
+    
+//     axios.get(`https://api.buttercms.com/v2/pages/portfolio/stephen-kelly-portfolio/?auth_token=${readtoken}`)
+//     .then(res =>{setData(res.data.data.fields.stephenkellyportfolio)
+//       // console.log('Data fetched:', res.data.data.fields.stephenkellyportfolio)
+      
+//     })
+//     .catch(err =>{
+//       console.log(err)
+//     })
+//   }
+//   getData()
+// }, [])
 
   return (
     <div >
