@@ -1,4 +1,4 @@
-[
+let sampleData=[
   {
     type: 'landing_section',
     fields: {
@@ -62,3 +62,5 @@
     }
   }
 ]
+
+export default sampleData
