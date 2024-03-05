@@ -34,7 +34,7 @@ const Home = ({content}) => {
       <div>
         <img
           src={stephen}  
-          alt="Image of Stephen Kelly"
+          alt="Stephen Kelly"
           className="rounded-2xl mx-auto w-2/3 md:w-full"
         />
       </div>
