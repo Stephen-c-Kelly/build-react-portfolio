@@ -23,38 +23,3 @@ const Skills = ({content}) => {
 };
 
 export default Skills;
-
-        {/* <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-          <p className='my-4'>HTML/CSS</p>
-        </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-          <p className='my-4'>JAVASCRIPT</p>
-        </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-          <p className='my-4'>REACT</p>
-        </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-          <p className='my-4'>NODE.JS</p>
-        </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-          <p className='my-4'>MONGO DB</p>
-        </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-          <p className='my-4'>SQL</p>
-        </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-          <p className='my-4'>PYTHON</p>
-        </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-          <p className='my-4'>DJANGO</p>
-        </div>
-        <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-          <p className='my-4'>GITHUB</p>
-        </div> */}
-//       </div>
-//     </div>
-//   </div>
-//   )
-// }
-
-// export default Skills

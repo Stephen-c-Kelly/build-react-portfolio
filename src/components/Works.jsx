@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Works = ({ content }) => {
   return (
@@ -12,27 +12,31 @@ const Works = ({ content }) => {
         </div>
         {/* map of projects */}
         {content?.fields.works.map((work, index) => (
-          <div key={index} style={{ backgroundImage: `url(${work.work_image})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-full mb-5">
-            {/* hover effect */}
-            <div className='opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center mx-auto p-4'>
-              <span className='text-lg font-bold text-white tracking-wider text-center'>
-                {work.work_title}
-              </span>
-              <p className='text-center'>
-                {work.work_description}
-              </p>
-              <div className='pt-8 text-center'>
-                <a href={work.github_url} target='_blank' rel="noopener noreferrer">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
-                  </button>
-                </a>
-                <a href={work.demo_url} target='_blank' rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
+          <div 
+            key={index} 
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-center items-center mx-auto mb-5 p-4"
+            style={{
+              backgroundImage: `linear-gradient(to right, rgba(112, 157, 255, 0.8), hsla(242, 74%, 61%, 0.8))`
+            }}
+          >
+            {/* Always visible content */}
+            <span className='text-lg font-bold text-white tracking-wider text-center'>
+              {work.work_title}
+            </span>
+            <p className='text-center'>
+              {work.work_description}
+            </p>
+            <div className='pt-8 text-center'>
+              <a href={work.github_url} target='_blank' rel="noopener noreferrer">
+                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                  Code
+                </button>
+              </a>
+              <a href={work.demo_url} target='_blank' rel="noopener noreferrer">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  Demo
+                </button>
+              </a>
             </div>
           </div>
         ))}
