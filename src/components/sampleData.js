@@ -10,7 +10,7 @@ let sampleData=[
   {
     type: 'about_section',
     fields: {
-      about_caption: 'Hi, I\'m Stephen Kelly. Please take a look around.',
+      about_caption: 'Industry professional living at the intersection of Customer Success, Product Management, and Development ',
       about_main_details: 
         'Full-stack software engineer, customer success manager, and digital project director inspired by building products clients love. As a software developer, I\'m passionately interested in developing software within a collaborative team that drives client success.'
     }
@@ -40,7 +40,7 @@ let sampleData=[
       work_header: 'Check out some of my most recent work',
       works: [
         {
-          work_title: 'Who is in Charge',
+          work_title: "Who's in Charge",
           work_description: 
           'Host a party, invite friends, collab on tunes, all with PartySync!  Working with a team of developers, I project managed and built a full-stack app that uses the Python-based Django REST Framework with a React.js frontend',
           work_image: 'https://cdn.buttercms.com/CczKIP9USJmDQ44auXSA',

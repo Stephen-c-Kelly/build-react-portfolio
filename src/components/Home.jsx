@@ -15,7 +15,7 @@ const Home = ({content}) => {
         <h2 className="text-4xl sm:text-7xl font-bold text-white">
           {content?.fields.landing_caption}
         </h2>
-        <p className="text-gray-500 py-4 max-w-md">
+        <p className="text-gray-300 py-4 max-w-md">
           {content?.fields.landing_main_text}
         </p>
         <div>
