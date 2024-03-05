@@ -1,4 +1,4 @@
-# build-react-portfolio
+# Stephen-Kelly-portfolio
 Building a Portfolio Website with React and ButterCMS
 
 ## Important Notice
