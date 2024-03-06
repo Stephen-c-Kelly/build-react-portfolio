@@ -32,7 +32,7 @@ useEffect(()=>{
     })
   }
   getData()
-}, [])
+}, [readtoken])
 
   return (
     <div >
