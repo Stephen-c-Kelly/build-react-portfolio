@@ -35,6 +35,7 @@ const Home = ({content}) => {
         <img
           src={stephen}  
           alt="Stephen Kelly"
+          loading="lazy"
           className="rounded-2xl mx-auto w-2/3 md:w-full"
         />
       </div>
