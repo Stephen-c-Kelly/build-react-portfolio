@@ -1,6 +1,6 @@
 import React from 'react'
 import { HiArrowNarrowRight   }  from 'react-icons/hi'
-import stephen from '../assets/stephen.png'
+import stephen from '../assets/stephen.jpg'
 import { Link } from 'react-scroll'
 
 const Home = ({content}) => {
@@ -31,10 +31,11 @@ const Home = ({content}) => {
           </Link>
         </div>
       </div>
-      <div>
+      <div loading="lazy">
         <img
           src={stephen}  
           alt="Stephen Kelly"
+          loading="lazy"
           className="rounded-2xl mx-auto w-2/3 md:w-full"
         />
       </div>
