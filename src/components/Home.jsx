@@ -7,7 +7,7 @@ const Home = ({content}) => {
   return (
     <div
     name="home"
-    className="h-screen w-full bg-[#0a192f]"
+    className="h-screen w-full bg-[#0a192f] pt-16 md:pt-0"
   >
     <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
       <div className="flex flex-col justify-center h-full">
@@ -31,7 +31,7 @@ const Home = ({content}) => {
           </Link>
         </div>
       </div>
-      <div loading="lazy">
+      <div>
         <img
           src={stephen}  
           alt="Stephen Kelly"
