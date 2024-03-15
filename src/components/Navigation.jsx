@@ -5,7 +5,6 @@ import {
   FaGithub,
   FaLinkedin,
 } from 'react-icons/fa';
-
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
