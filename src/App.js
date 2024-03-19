@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Skills from './components/Skills';
 import Works from './components/Works';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import {React, useEffect, useState} from 'react';
 import axios from 'axios';
 
@@ -43,6 +44,7 @@ useEffect(()=>{
       <Skills content={data[2]}/>
       <Works content={data[3]}/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
