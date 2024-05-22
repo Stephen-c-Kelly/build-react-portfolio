@@ -10,32 +10,22 @@
 // })
 
 describe('Navigation links work', () => {
+  const links = [
+    { label: 'Home', target: 'home' },
+    { label: 'About', target: 'about' },
+    { label: 'Skills', target: 'skills' },
+    { label: 'Work', target: 'work' },
+    { label: 'Contact', target: 'contact' }
+  ];
+
   beforeEach(() => {
-    cy.visit('https://stephenckelly.com/'); // Replace with your actual local URL or deployed URL
+    cy.visit('https://stephenckelly.com/'); 
   });
 
-  it('should navigate to the Home section', () => {
-    cy.contains('Home').click();
-    cy.get('div[name="home"]').should('be.visible');
-  });
-
-  it('should navigate to the About section', () => {
-    cy.contains('About').click();
-    cy.get('div[name="about"]').should('be.visible');
-  });
-
-  it('should navigate to the Skills section', () => {
-    cy.contains('Skills').click();
-    cy.get('div[name="skills"]').should('be.visible');
-  });
-
-  it('should navigate to the Work section', () => {
-    cy.contains('Work').click();
-    cy.get('div[name="work"]').should('be.visible');
-  });
-
-  it('should navigate to the Contact section', () => {
-    cy.contains('Contact').click();
-    cy.get('div[name="contact"]').should('be.visible');
+  links.forEach(link => {
+    it(`should navigate to the ${link.label} section`, () => {
+      cy.contains(link.label).click();
+      cy.get(`div[name="${link.target}"]`).should('be.visible');
+    });
   });
 });
