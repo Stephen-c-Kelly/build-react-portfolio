@@ -17,6 +17,7 @@ describe('Navigation links work', () => {
     { label: 'Work', target: 'work' },
     { label: 'Contact', target: 'contact' }
   ];
+  
 
   beforeEach(() => {
     cy.visit('https://stephenckelly.com/'); 
