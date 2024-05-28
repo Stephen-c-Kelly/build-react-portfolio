@@ -1,5 +1,5 @@
 # Stephen-Kelly-portfolio
-Building a Portfolio Website with React and ButterCMS
+Portfolio Website built with with React and a headless CMS, using Cypress for automated testing.
 
 # links
 https://portfolio-mvp--stephen-kelly-portfolio.netlify.app/

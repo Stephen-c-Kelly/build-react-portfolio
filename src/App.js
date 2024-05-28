@@ -13,16 +13,6 @@ function App() {
 const readtoken = process.env.REACT_APP_BUTTER_CMS_READ_TOKEN
 const [data, setData] = useState([])
 
-
-// for using sample data:
-// import sampleData from './components/sampleData'
-// useEffect(()=>{
-//   setData(sampleData)
-// }, [])
-// useEffect(()=>{
-//   console.log(`data is `, data)
-// }, [data])
-
 useEffect(()=>{
 
   
@@ -57,3 +47,12 @@ useEffect(()=>{
 
 export default App;
 
+
+// for using sample data:
+// import sampleData from './components/sampleData'
+// useEffect(()=>{
+//   setData(sampleData)
+// }, [])
+// useEffect(()=>{
+//   console.log(`data is `, data)
+// }, [data])
