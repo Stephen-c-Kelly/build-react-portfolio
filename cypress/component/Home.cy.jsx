@@ -26,18 +26,3 @@ describe('<App />', () => {
 
 })
 })
-
-// describe('<Home />', () => {
-//   it('should mount and load sample api content', () => {
-//     cy.intercept('GET', 'https://api.buttercms.com/v2/pages/portfolio/stephen-kelly-portfolio/?auth_token=*', {
-//       statusCode: 200,
-//       body: sampleData,
-//   }).as('getData');
-   
-//     cy.mount(<Home />);
-//     cy.wait('@getData');
-
-//     cy.get('h2').should('have.text', sampleData[0].fields.landing_caption);
-
-// })
-// })
