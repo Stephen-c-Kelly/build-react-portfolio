@@ -23,6 +23,8 @@ const [data, setData] = useState([])
 // }, [data])
 
 useEffect(()=>{
+
+  
   const getData = async () =>{
     
     axios.get(`https://api.buttercms.com/v2/pages/portfolio/stephen-kelly-portfolio/?auth_token=${readtoken}`)
@@ -34,6 +36,10 @@ useEffect(()=>{
   }
   getData()
 }, [readtoken])
+
+
+
+// add props here to check if the image is loaded.  add a state variale that is true or false.  use a conditional to check if the image is loaded.  if it is loaded, then display the image.  if it is not loaded, then display a loading image.
 
   return (
     <div >
