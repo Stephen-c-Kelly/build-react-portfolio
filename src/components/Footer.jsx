@@ -12,6 +12,7 @@ const Footer = () => {
         <img src={buttery} alt="buttercms" className="inline mr-2 align-middle" style={{ width: `${972 / divisor}px`, height: `${243 / divisor}px` }} />
       </a>
     </div>
+    
   );
 };
 
