@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { HiArrowNarrowRight   }  from 'react-icons/hi'
 import stephen from '../assets/stephen.jpg'
 import { Link } from 'react-scroll'
