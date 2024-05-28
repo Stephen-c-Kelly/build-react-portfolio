@@ -16,5 +16,3 @@ stephenckelly.com
 - [ButterCMS Docs](https://buttercms.com/docs/)
 - [ButterCMS API docs](https://buttercms.com/docs/api/)
 - [Cypress Docs](https://docs.cypress.io/guides/overview/why-cypress)
-
-
