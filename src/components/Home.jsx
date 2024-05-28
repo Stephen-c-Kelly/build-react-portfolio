@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { HiArrowNarrowRight   }  from 'react-icons/hi'
 import stephen from '../assets/stephen.jpg'
 import { Link } from 'react-scroll'
 
 const Home = ({content}) => {
+  console.log(content)
   return (
     <div
     name="home"
@@ -32,11 +33,11 @@ const Home = ({content}) => {
         </div>
       </div>
       <div>
-        <img
+      <img
           src={stephen}  
           alt="Stephen Kelly"
           loading="lazy"
-          className="rounded-2xl mx-auto w-2/3 md:w-full"
+          className={`rounded-2xl mx-auto w-full ${content ? 'block' : 'hidden'}`}
         />
       </div>
     </div>
