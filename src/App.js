@@ -14,6 +14,8 @@ const readtoken = process.env.REACT_APP_BUTTER_CMS_READ_TOKEN
 const [data, setData] = useState([])
 
 useEffect(()=>{
+
+  
   const getData = async () =>{
     
     axios.get(`https://api.buttercms.com/v2/pages/portfolio/stephen-kelly-portfolio/?auth_token=${readtoken}`)
@@ -25,7 +27,6 @@ useEffect(()=>{
   }
   getData()
 }, [readtoken])
-
   return (
     <div >
       <Navigation />
