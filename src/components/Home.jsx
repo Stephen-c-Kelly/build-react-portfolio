@@ -37,7 +37,6 @@ const Home = ({content}) => {
           src={stephen}  
           alt="Stephen Kelly"
           loading="lazy"
-          // className="rounded-2xl mx-auto w-2/3 md:w-full"
           className={`rounded-2xl mx-auto w-full ${content ? 'block' : 'hidden'}`}
         />
       </div>
