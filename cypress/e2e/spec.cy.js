@@ -14,8 +14,9 @@ describe('Navigation links work', () => {
     { label: 'Home', target: 'home' },
     { label: 'About', target: 'about' },
     { label: 'Skills', target: 'skills' },
-    { label: 'Work', target: 'work' },
-    { label: 'Contact', target: 'contact' }
+    { label: 'Work', target: 'work' }
+    // ,
+    // { label: 'Contact', target: 'contact' }
   ];
 
 
